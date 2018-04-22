@@ -27,9 +27,11 @@ $usuario = new Usuario();
 
 //$usuario->insert();
 
-$usuario->loadById(7);
-$usuario->update("teste","teste2");
+//$usuario->loadById(7);
+//$usuario->update("teste","teste2");
 
+$usuario->loadById(7);
+$usuario->delete();
 echo $usuario;
 
  ?>
