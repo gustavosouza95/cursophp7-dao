@@ -8,10 +8,20 @@ require_once("config.php");
 
 //echo json_encode($usuarios);
 
-$root = new Usuario();
 
-$root->loadById(3);
 
-echo $root;
+//$root = new Usuario();
+//carrega 1 usuario
+//$root->loadById(3);
+
+//$lista = Usuario::getList();
+
+//$busca = Usuario::search("t");
+//echo json_encode($busca);
+
+$usuario = new Usuario();
+$usuario->login("root","!@#$%");
+
+echo $usuario;
 
  ?>
