@@ -20,7 +20,15 @@ require_once("config.php");
 //echo json_encode($busca);
 
 $usuario = new Usuario();
-$usuario->login("root","!@#$%");
+//$usuario->login("root","!@#$%");
+
+//$usuario->setDeslogin("aluno");
+//$usuario->setDessenha("senha1");
+
+//$usuario->insert();
+
+$usuario->loadById(7);
+$usuario->update("teste","teste2");
 
 echo $usuario;
 
